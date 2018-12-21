@@ -1,0 +1,22 @@
+$(".Hits").hide();
+$(".Ult").hide();
+$(".Q").hide();
+$(".Defeat").hide();
+$(".Loser").hide();
+$(".LoL").hide();
+$(".Yasuo").click(function(){
+    $(".Hits").show();
+    $(".HIts").css("color","red");
+});
+$(".Hits").mouseenter(function(){
+    $(".Q").slideDown();
+});
+$(".Q").hover(function(){
+    $(".Defeat").fadeTo();
+});
+$(".Defeat").dblclick(function(){
+    $(".Loser").show();
+});
+$(".Loser").mouseleave(function(){
+    $(".LoL").slideToggle();
+});
